@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>ReadsAnalyzer</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>docs/Tarea 2 algoritmos datos.xlsx</name>
+			<type>1</type>
+			<locationURI>PARENT-4-PROJECT_LOC/OneDrive%20-%20Universidad%20de%20Los%20Andes/Tarea%202%20algoritmos%20datos.xlsx</locationURI>
+		</link>
+		<link>
+			<name>docs/Tarea 2 algoritmos.docx</name>
+			<type>1</type>
+			<locationURI>PARENT-4-PROJECT_LOC/OneDrive%20-%20Universidad%20de%20Los%20Andes/Tarea%202%20algoritmos.docx</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>
