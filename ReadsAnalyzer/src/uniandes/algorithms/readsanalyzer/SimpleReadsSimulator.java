@@ -45,13 +45,17 @@ public class SimpleReadsSimulator {
 		
 		
 		try (PrintStream out = new PrintStream(outFile)){
-			out.println("@ " + 1);
-			out.println("@ " + 1);
-			out.println("@ " + 1);
-			out.println("@ " + 1);
+			for(int i = 0 ; i < numReads; i ++)
+			{	int ranPos = random.nextInt(seqLength-readLength);
+				String read = sequence.substring(ranPos,ranPos+readLength);
+				out.println("@"+i);
+				out.println(read);
+				out.println("+");
+				out.println(fixedQSStr);
+			}
 			// TODO: Generar lecturas aleatorias. Utilizar el objeto random para generar una posicion aleatoria de inicio
 			// en la cadena sequence. Extraer la lectura de tamanho readLength e imprimirla en formato fastq.
-			int ranPos = random.nextInt(seqLength);
+			
 
 			// Utilizar la cadena fixedQSStr para generar calidades fijas para el formato
 			
