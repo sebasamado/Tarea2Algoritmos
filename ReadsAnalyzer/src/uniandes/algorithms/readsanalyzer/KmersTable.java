@@ -64,12 +64,12 @@ public class KmersTable implements RawReadProcessor {
 	 * observed as many times as the corresponding array index. Position zero should be equal to zero
 	 */
 	public int[] calculateAbundancesDistribution() {
-		int[] abundances = new int[1000];
-		Set set1 = kmers.entrySet();
-		Iterator iter = set1.iterator();
+		int[] abundances = new int[1500];
+		Set<String> set1 = kmers.keySet();
+		Iterator<String> iter = set1.iterator();
 		while(iter.hasNext()) {
-			Map.Entry mentry = (Map.Entry)iter.next();
-			abundances[(int) mentry.getValue()]+=1;
+			String mentry = iter.next();
+			abundances[kmers.get(mentry)]+=1;
 		}
 		return abundances;
 	}
